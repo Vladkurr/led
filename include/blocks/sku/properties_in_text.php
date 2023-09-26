@@ -22,9 +22,11 @@
         <?endif;?>
         <div class="line-block line-block--flex-wrap line-block--4 sku-props__values ">
             <?foreach ((array)$arOptions['VALUES'] as $key => $arItem):?>
+            <?php if($arItem["NAME"]): ?>
                 <div class="line-block__item" <?=$arItem['STYLE']?>>
                     <div class="sku-props__value font_<?= $arOptions['FONT']; ?> <?=($arItem['CLASS'] === 'active' ? 'sku-props__value--active' : '');?>" data-onevalue="<?=$arItem['ID'];?>" data-title="<?=$arItem['NAME']?>"><?=$arItem['NAME']?></div>
                 </div>
+            <?php endif; ?>
             <?endforeach;?>
         </div>
     </div>

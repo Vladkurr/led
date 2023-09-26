@@ -94,7 +94,7 @@ $blockTemplateOptions = $blockOptions['TEMPLATE']['LIST'][ $blockOptions['TEMPLA
 		"THEME" => array(
 			"IMAGE" => $blockTemplateOptions["ADDITIONAL_OPTIONS"]["IMAGE"]["VALUE"],
 			"BORDERED" => $blockTemplateOptions["ADDITIONAL_OPTIONS"]["BORDERED"]["VALUE"],
-		),
+		)
 	),
 	false
 );?>

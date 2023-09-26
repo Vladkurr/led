@@ -15,20 +15,6 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Акции", 
-		"/sales/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Бренды", 
-		"/brands/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
 		"Услуги", 
 		"/services/", 
 		Array(), 

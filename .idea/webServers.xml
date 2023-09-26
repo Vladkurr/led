@@ -9,6 +9,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="ac347e72-e901-4735-98c4-072e85b8d2e9" name="led.production" url="http://jewelry2.beget.tech">
+        <fileTransfer rootFolder="/public_html" host="jewelry2.beget.tech" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

@@ -19,7 +19,7 @@
         <div class="line-block line-block--flex-wrap line-block--6 sku-props__values ">
             <?foreach ($arOptions['VALUES'] as $key => $arItem):?>
                 <div class="line-block__item" <?=$arItem['STYLE']?>>
-                    <div class="sku-props__value sku-props__value--pict <?=($arItem['CLASS'] === 'active' ? 'sku-props__value--active' : '');?>" data-onevalue="<?=$arItem['ID'];?>" data-title="<?=$arItem['NAME']?>" title="<?=$arItem['NAME']?>" style="background-image: url(<?=($arItem['PICT']['SRC'] ?? $arItem['PICT'])?>);"><?=$arItem['NAME']?></div>
+                    <div class="sku-props__value sku-props__value--pict <?=($arItem['CLASS'] === 'active' ? 'sku-props__value--active' : '');?>" data-onevalue="<?=$arItem['ID'];?>" data-title="<?=$arItem['NAME']?>" title="<?=$arItem['NAME']?>" data-sku-id="<?=$arItem['ID']?>" style="background-image: url(<?=($arItem['PICT']['SRC'] ?? $arItem['PICT'])?>);"><?=$arItem['NAME']?></div>
                 </div>
             <?endforeach;?>
         </div>

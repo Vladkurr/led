@@ -7,8 +7,8 @@ $bShowMore = $blockTemplateOptions["ADDITIONAL_OPTIONS"]["LINES_COUNT"]["VALUE"]
 $linesCount = $bShowMore ? 1 : (intval($blockTemplateOptions["ADDITIONAL_OPTIONS"]["LINES_COUNT"]["VALUE"]) ?: 1);
 
 $APPLICATION->IncludeComponent(
-	"bitrix:news.list", 
-	"brands-list", 
+	"bitrix:news.list",
+	"brands-list",
 	array(
 		"IBLOCK_TYPE" => "aspro_lite_content",
 		"IBLOCK_ID" => "6",

@@ -13,7 +13,7 @@ $blockTemplateOptions = $blockOptions['TEMPLATE']['LIST'][$blockOptions['TEMPLAT
 		"CACHE_TIME" => "3600000",
 		"CACHE_FILTER" => "Y",
 		"CACHE_GROUPS" => "N",
-		"COUNT_ELEMENTS" => "N",
+		"COUNT_ELEMENTS" => "Y",
 		"FILTER_NAME" => "arrPopularSections",
 		"TOP_DEPTH" => "2",
 		"SECTION_URL" => "",
@@ -50,7 +50,9 @@ $blockTemplateOptions = $blockOptions['TEMPLATE']['LIST'][$blockOptions['TEMPLAT
 		),
 		"COMPOSITE_FRAME_MODE" => "A",
 		"COMPOSITE_FRAME_TYPE" => "AUTO",
-		"COUNT_ELEMENTS_FILTER" => "CNT_ACTIVE"
+		"COUNT_ELEMENTS_FILTER" => "CNT_ALL",
+		"ADDITIONAL_COUNT_ELEMENTS_FILTER" => "additionalCountFilter",
+		"HIDE_SECTIONS_WITH_ZERO_COUNT_ELEMENTS" => "N"
 	),
 	false
 );?>

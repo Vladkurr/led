@@ -28,12 +28,6 @@ $aMenuLinks = Array(
 		Array(), 
 		"" 
 	),
-	Array(
-		"Обзоры", 
-		"/landings/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
+
 );
 ?>

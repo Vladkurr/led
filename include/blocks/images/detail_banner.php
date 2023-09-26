@@ -43,7 +43,7 @@ $arOptions = $arConfig['PARAMS'];
                                             </div>
                                         </div>
                                     <?endif;?>
-                                    
+
                                     <?if($arOptions['BUTTONS']):?>
                                         <div class="banners-big__buttons ">
                                             <?foreach($arOptions['BUTTONS'] as $arButton):?>
@@ -57,14 +57,14 @@ $arOptions = $arConfig['PARAMS'];
                                                 ?>
                                                 <div class="banners-big__buttons-item">
                                                     <? if( $arButton['TYPE'] === 'link' && $arButton['LINK'] ): ?>
-                                                        <a 
+                                                        <a
                                                             href="<?= $arButton['LINK']; ?>"
                                                             class="btn-lg <?= $arButton['CLASS']; ?>"
                                                             <?= !empty($arButton['ATTR']) ? implode(' ', $arButton['ATTR']) : null; ?>
                                                         ><?= $arButton['TITLE']; ?></a>
                                                     <? else: ?>
                                                         <span
-                                                            class="btn-lg <?= $arButton['CLASS']; ?>" 
+                                                            class="btn-lg <?= $arButton['CLASS']; ?>"
                                                             <?= !empty($arButton['ATTR']) ? implode(' ', $arButton['ATTR']) : null; ?>
                                                         ><?= $arButton['TITLE']; ?></span>
                                                     <? endif; ?>

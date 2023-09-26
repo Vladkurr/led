@@ -15,12 +15,12 @@ $bOneVideo = count((array)$arOptions['VIDEO']) == 1;
                     <?if (is_array($value)):?>
                         <?$videoMimeType = mime_content_type($_SERVER['DOCUMENT_ROOT'].$value['path']);?>
                         <div class="video_body video_from_file">
-                            <video id="js-video_<?=$v;?>" 
-                                width="<?=$bOneVideo ? $value['width'] : '540';?>" 
-                                height="<?=$bOneVideo ? $value['height'] : '357';?>"  
-                                class="video-js" 
-                                controls="controls" 
-                                preload="metadata" 
+                            <video id="js-video_<?=$v;?>"
+                                width="<?=$bOneVideo ? $value['width'] : '540';?>"
+                                height="<?=$bOneVideo ? $value['height'] : '357';?>"
+                                class="video-js"
+                                controls="controls"
+                                preload="metadata"
                                 data-setup="{}"
                             >
                                 <source src="<?=$value['path'];?>" type="<?=$videoMimeType;?>" />
@@ -36,15 +36,15 @@ $bOneVideo = count((array)$arOptions['VIDEO']) == 1;
                         <?else:?>
                             <div class="video_body">
                                 <?=str_replace(
-                                    'src=', 
-                                    'width="660" height="457" src=', 
+                                    'src=',
+                                    'width="660" height="457" src=',
                                     str_replace(
-                                        ['width', 'height'], 
-                                        ['data-width', 'data-height'], 
+                                        ['width', 'height'],
+                                        ['data-width', 'data-height'],
                                         $value
                                     )
                                 );?>
-                            </div>	
+                            </div>
                         <?endif;?>
                     <?else:?>
                         <?=$value;?>

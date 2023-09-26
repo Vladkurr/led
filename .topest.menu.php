@@ -1,13 +1,6 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Лицензии", 
-		"/company/licenses/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
 		"Производители", 
 		"/brands/", 
 		Array(), 

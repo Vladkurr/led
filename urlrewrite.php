@@ -1,5 +1,21 @@
 <?php
 $arUrlRewrite=array (
+  26 => 
+  array (
+    'CONDITION' => '#^/online/([\\.\\-0-9a-zA-Z]+)(/?)([^/]*)#',
+    'RULE' => 'alias=$1',
+    'ID' => NULL,
+    'PATH' => '/desktop_app/router.php',
+    'SORT' => 100,
+  ),
+  28 => 
+  array (
+    'CONDITION' => '#^/video/([\\.\\-0-9a-zA-Z]+)(/?)([^/]*)#',
+    'RULE' => 'alias=$1&videoconf',
+    'ID' => 'bitrix:im.router',
+    'PATH' => '/desktop_app/router.php',
+    'SORT' => 100,
+  ),
   19 => 
   array (
     'CONDITION' => '#^/personal/history-of-orders/#',
@@ -22,6 +38,14 @@ $arUrlRewrite=array (
     'RULE' => '',
     'ID' => '',
     'PATH' => '/bitrix/services/ymarket/index.php',
+    'SORT' => 100,
+  ),
+  27 => 
+  array (
+    'CONDITION' => '#^/online/(/?)([^/]*)#',
+    'RULE' => '',
+    'ID' => NULL,
+    'PATH' => '/desktop_app/router.php',
     'SORT' => 100,
   ),
   4 => 
@@ -96,7 +120,7 @@ $arUrlRewrite=array (
     'PATH' => '/landings/index.php',
     'SORT' => 100,
   ),
-  20 => 
+  23 => 
   array (
     'CONDITION' => '#^/personal/#',
     'RULE' => '',
@@ -104,7 +128,7 @@ $arUrlRewrite=array (
     'PATH' => '/personal/index.php',
     'SORT' => 100,
   ),
-  21 => 
+  24 => 
   array (
     'CONDITION' => '#^/contacts/#',
     'RULE' => '',
@@ -112,7 +136,7 @@ $arUrlRewrite=array (
     'PATH' => '/contacts/index.php',
     'SORT' => 100,
   ),
-  17 => 
+  29 => 
   array (
     'CONDITION' => '#^/catalog/#',
     'RULE' => '',

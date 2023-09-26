@@ -10,7 +10,7 @@ $arParams = $arConfig['PARAMS'];
 	".default", 
 	array(
 		"IBLOCK_TYPE" => "aspro_lite_catalog",
-		"IBLOCK_ID"	=> \Bitrix\Main\Config\Option::get(VENDOR_MODULE_ID, 'CATALOG_IBLOCK_ID', '11'),
+		"IBLOCK_ID"	=> TSolution::GetFrontParametrValue('CATALOG_IBLOCK_ID'),
 		"CACHE_TYPE"	=>	$arParams["CACHE_TYPE"],
 		"CACHE_TIME"	=>	$arParams["CACHE_TIME"],
 		"CACHE_FILTER"	=>	$arParams["CACHE_FILTER"],

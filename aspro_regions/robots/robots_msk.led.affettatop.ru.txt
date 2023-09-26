@@ -33,4 +33,5 @@ Disallow: /*back_url_admin=
 Disallow: /*?utm_source=
 Disallow: *?arrFilter*
 Crawl-delay: 20
-Host: msk.led.affettatop.ru
+Host: https://msk.led.affettatop.ru
+Sitemap: https://msk.led.affettatop.ru/sitemap.xml

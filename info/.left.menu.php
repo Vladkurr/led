@@ -14,12 +14,6 @@ $aMenuLinks = Array(
 		Array(), 
 		"" 
 	),
-	Array(
-		"Возможности", 
-		"/info/more/", 
-		Array(), 
-		Array(), 
-		"" 
-	)
+
 );
 ?>
