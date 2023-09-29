@@ -1,11 +1,24 @@
 <?
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 $this->setFrameMode(true);
-
+/** @var array $arParams */
+/** @var array $arResult */
 use \Bitrix\Main\Localization\Loc;
-
+$arParams["TITLE"] = "Хиты продаж";
 ?>
+
+
 <div class="maxwidth-theme">
+        <div class="index-block__title-wrapper" style="padding: 0 0 25px 0">
+            <div class="index-block__part--left">
+                <h3 class="index-block__title switcher-title">
+                    <a class="index-block__link-wrapper dark_link stroke-theme-hover" href="/catalog/" title="">
+                        <span>Категории товаров</span>
+                        <span class="index-block__link"><span class="index-block__arrow"><i class="svg inline " aria-hidden="true"><svg width="7" height="12"><use xlink:href="/bitrix/templates/aspro-lite/images/svg/arrows.svg#right-7-12"></use></svg></i></span></span>
+                    </a>
+                </h3>
+            </div>
+        </div>
     <?php
     $arItems = $arResult['SECTIONS']; ?>
     <? if ($arItems): ?>

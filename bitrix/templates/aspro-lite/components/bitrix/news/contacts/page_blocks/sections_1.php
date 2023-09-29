@@ -28,33 +28,44 @@ $bGallery = boolval($GLOBALS['arRegion']);
 							</div>
 						</div>
 						<div class="contacts__col">
-							<div class="contacts-detail__property">
-								<?TSolution::showContactPhones(Loc::getMessage('T_CONTACTS_PHONE'), false);?>
-							</div>
+<!--							<div class="contacts-detail__property">-->
+<!--								--><?//TSolution::showContactPhones(Loc::getMessage('T_CONTACTS_PHONE'), false);?>
+<!--							</div>-->
+                            <div class="contacts-detail__property">
+                                <!--'start_frame_cache_header-allcphones-block1'-->					<div class="contact-property contact-property--phones">
+                                    <div class="contact-property__label font_13 color_999">Телефон</div>
+
+                                    <div class="contact-property__value dark_link" itemprop="telephone">
+
+                                        <div class="contact-property__value dark_link" itemprop="telephone"><a href="tel:+79883104244">+79883104244</a></div>
+
+                                    </div>
+                                </div>
+                                <!--'end_frame_cache_header-allcphones-block1'-->							</div>
 							<div class="contacts-detail__property">
 								<?TSolution::showContactEmail(Loc::getMessage('T_CONTACTS_EMAIL'), false);?>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="contacts-detail__social">
-					<?$APPLICATION->IncludeComponent(
-						"aspro:social.info.lite",
-						".default",
-						array(
-							"CACHE_TYPE" => "A",
-							"CACHE_TIME" => "3600000",
-							"CACHE_GROUPS" => "N",
-							"COMPONENT_TEMPLATE" => ".default",
-							'SVG' => false,
-							'IMAGES' => true,
-							'ICONS' => true,
-							'SIZE' => 'large',
-							'HIDE_MORE' => false,
-						),
-						false
-					);?>
-				</div>
+<!--				<div class="contacts-detail__social">-->
+<!--					--><?//$APPLICATION->IncludeComponent(
+//						"aspro:social.info.lite",
+//						".default",
+//						array(
+//							"CACHE_TYPE" => "A",
+//							"CACHE_TIME" => "3600000",
+//							"CACHE_GROUPS" => "N",
+//							"COMPONENT_TEMPLATE" => ".default",
+//							'SVG' => false,
+//							'IMAGES' => true,
+//							'ICONS' => true,
+//							'SIZE' => 'large',
+//							'HIDE_MORE' => false,
+//						),
+//						false
+//					);?>
+<!--				</div>-->
 				<div class="contacts-detail__description">
 					<?TSolution::showContactDesc();?>
 					<?if($bUseFeedback):?>

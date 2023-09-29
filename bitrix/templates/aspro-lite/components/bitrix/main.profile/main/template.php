@@ -275,17 +275,17 @@ list($bPhoneAuthSupported, $bPhoneAuthShow, $bPhoneAuthRequired, $bPhoneAuthUse)
 			$arResult['SOCSERV_ENABLED'] &&
 			!$arResult['SHOW_SMS_FIELD']
 		):?>
-			<?$APPLICATION->IncludeComponent(
-				"bitrix:socserv.auth.split",
-				"main",
-				array(
-					"SUFFIX" => "form",
-					"SHOW_PROFILES" => "Y",
-					"ALLOW_DELETE" => "Y"
-				),
-				false,
-				array("HIDE_ICONS" => "Y")
-			);?>
+<!--			--><?//$APPLICATION->IncludeComponent(
+//				"bitrix:socserv.auth.split",
+//				"main",
+//				array(
+//					"SUFFIX" => "form",
+//					"SHOW_PROFILES" => "Y",
+//					"ALLOW_DELETE" => "Y"
+//				),
+//				false,
+//				array("HIDE_ICONS" => "Y")
+//			);?>
 		<?endif;?>
 	</div>
 </div>

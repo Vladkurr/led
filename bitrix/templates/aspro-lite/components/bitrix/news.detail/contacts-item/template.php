@@ -256,22 +256,22 @@ if(is_array($arResult['DISPLAY_PROPERTIES']['MORE_PHOTOS']['VALUE'])) {
 					</div>
 				</div>
 				<div class="contacts-detail__social">
-					<?$APPLICATION->IncludeComponent(
-						"aspro:social.info.lite",
-						".default",
-						array(
-							"CACHE_TYPE" => "A",
-							"CACHE_TIME" => "3600000",
-							"CACHE_GROUPS" => "N",
-							"COMPONENT_TEMPLATE" => ".default",
-							'SVG' => false,
-							'IMAGES' => true,
-							'ICONS' => true,
-							'SIZE' => 'large',
-							'HIDE_MORE' => false,
-						),
-						false
-					);?>
+<!--					--><?//$APPLICATION->IncludeComponent(
+//						"aspro:social.info.lite",
+//						".default",
+//						array(
+//							"CACHE_TYPE" => "A",
+//							"CACHE_TIME" => "3600000",
+//							"CACHE_GROUPS" => "N",
+//							"COMPONENT_TEMPLATE" => ".default",
+//							'SVG' => false,
+//							'IMAGES' => true,
+//							'ICONS' => true,
+//							'SIZE' => 'large',
+//							'HIDE_MORE' => false,
+//						),
+//						false
+//					);?>
 				</div>
 				<div class="contacts-detail__description" itemprop="description">
                     <?if(strlen($arResult['FIELDS']['DETAIL_TEXT'])):?>

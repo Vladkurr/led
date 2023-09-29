@@ -4,7 +4,6 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 /** @var array $arParams */
 /** @var array $arResult */
 /** @global CDatabase $DB */
-
 use \Bitrix\Main\Loader;
 
 $this->setFrameMode(true);
@@ -60,7 +59,7 @@ if (
 				</div>
 			<?$navHtml = ob_get_clean();?>
 		<?endif;?>
-		
+
 		<?=TSolution\Functions::showTitleBlock([
 			'PATH' => 'elements-list',
 			'PARAMS' => $arParams,

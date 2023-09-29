@@ -1767,3 +1767,7 @@ a.icon-text:focus {
     order: 1;
   }
 }
+.sections-block__item-image-wrapper{
+  --section-image-width: 100px;
+  --section-image-height: 150px;
+}
